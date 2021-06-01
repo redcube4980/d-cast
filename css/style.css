@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* -------------------------------------------------- 
+	Copyright: (c)visual and echo japan
+	Created: 2013.08.20
+ -------------------------------------------------- */
+ 
+/*----------------------------------------------------
+	#SNS関係
+----------------------------------------------------*/
+#contentsArea #tr_list_index{
+	width:250px;
+	height:198px;
+	position:absolute;
+	bottom:94px;
+	right:25px;
+	z-index:2;
+}
+#contentsArea #fb_list_index{
+	width:250px;
+	height:300px;
+	position:absolute;
+	bottom:94px;
+	right:25px;
+	z-index:2;
+}
+
+#contentsArea #tr_list{
+	width:250px;
+	height:248px;
+	position:absolute;
+	bottom:36px;
+	right:26px;
+}
+#contentsArea #sns {
+	background-image:url(../images/common/sns_bg.png);
+	width: 253px;
+	height: 34px;
+	float:left;
+	position: absolute;
+	top: 550px;
+	left: 684px;
+	display:block;
+}
+#contentsArea #sns #tr_timeline, #sns #fb_timeline {
+	width: 105px;
+	height: 30px;
+	float:left;
+	margin-left:35px;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #999;
+}
+#contentsArea #sns #tr_timeline a {
+	background-image:url(../images/common/tr_timeline.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 93px;
+	height: 30px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+#contentsArea #sns #fb_timeline a {
+	background-image:url(../images/common/fb_timeline.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 93px;
+	height: 30px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+/*#contentsArea #sns #tr_timeline a:hover {
+	background-position: left bottom;
+}*/
+#contentsArea #sns #tr {
+	width: 30px;
+	height: 30px;
+	float:left;
+	margin-left:10px;
+}
+#contentsArea #sns #tr a {
+	background-image:url(../images/common/tr.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 30px;
+	height: 30px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+#contentsArea #sns #tr a:hover {
+	background-position: left bottom;
+}
+#contentsArea #sns #fb {
+	width: 30px;
+	height: 30px;
+	float:left;
+	margin-left:5px;
+}
+#contentsArea #sns #fb a {
+	background-image:url(../images/common/fb.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 30px;
+	height: 30px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+#contentsArea #sns #fb a:hover {
+	background-position: left bottom;
+}
+ 
+#r_logo {
+	width:359px;
+	height:55px;
+	z-index:100px;
+	position:absolute;
+	top:2px;
+	left:0;
+	z-index:100;
+}

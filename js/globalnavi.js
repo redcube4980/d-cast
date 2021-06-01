@@ -1,0 +1,13 @@
+document.write('<div id="header">');
+document.write('<img src="/images/header1.gif" width="780" height="59" border="0" usemap="#Map" /><map name="Map" id="Map"><area shape="rect" coords="49,20,302,50" href="/index.html" /><area shape="rect" coords="670,40,763,56" href="mailto:IMANISHI@d-cast.jp" /></map>');
+document.write('<div id="topmenu">');
+document.write('<ul id="button">');
+document.write('<li class="button"><a href="/index.html">HOME</a></li>');
+document.write('<li class="button"><a href="/about/index.html">会社概要</a></li>');
+document.write('<li class="button"><a href="/product/index.html">製品案内</a></li>');
+document.write('<li class="button"><a href="/equipment/index.html">生産設備</a></li>');
+document.write('<li class="button"><a href="/recruit/index.html">採用情報</a></li>');
+document.write('<li class="button"><a href="/service/index.html">サービス体制</a></li>');
+document.write('</ul>');
+document.write('</div>');
+document.write('</div>');

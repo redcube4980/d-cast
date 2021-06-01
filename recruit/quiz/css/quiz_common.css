@@ -1,0 +1,273 @@
+@charset "utf-8";
+/* -------------------------------------------------- 
+	Copyright: (c)visual and echo japan
+	Created: 2013.08.20
+ -------------------------------------------------- */
+ 
+#contentsArea #speech {
+	background-image:url(../images/common/speech_bg.png);
+	width:956px;
+	height:128px;
+	position: absolute;
+	top: 420px;
+	left: 2px;
+}
+#contentsArea #speech_close {
+	background-image:url(../images/common/speech_bg_close.png);
+	width:933px;
+	height:37px;
+	position: absolute;
+	top: 511px;
+	left: 25px;
+}
+#contentsArea #speech_close a {
+	background-image:url(../images/common/speech_menu1_6.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 18px;
+	height: 18px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+	margin:10px 0 0 900px;
+}
+#contentsArea #speech_close a:hover {
+	background-position: left bottom;
+}
+#contentsArea #speech #speech_name {
+	width:185px;
+	text-align:center;
+	padding-top:8px;
+	float:left;
+}
+#contentsArea #speech #speech_menu {
+	width:290px;
+	text-align:center;
+	float:right;
+}
+#contentsArea #speech #speech_menu li {
+	margin-top:10px;
+}
+/*不正解 暗転*/
+#contentsArea #incorrect {
+	width:956px;
+	height:546px;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	z-index:1000;
+}
+#contentsArea #incorrectBTN {
+	width:956px;
+	height:546px;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	z-index:999;
+}
+
+
+/* menu01 */
+#contentsArea #speech #speech_menu ul .menu01 {
+	width: 57px;
+	height: 17px;
+	float:left;
+}
+#contentsArea #speech #speech_menu .menu01 a {
+	background-image:url(../images/common/speech_menu1_1.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 57px;
+	height: 17px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+#contentsArea #speech #speech_menu .menu01.autoON a {
+	background-position: left bottom;
+}
+#contentsArea #speech #speech_menu .menu01 a:hover {
+	background-position: left bottom;
+}
+/* menu02 */
+#contentsArea #speech #speech_menu ul .menu02 {
+	width: 26px;
+	height: 17px;
+	margin-left:19px;
+	float:left;
+}
+#contentsArea #speech #speech_menu .menu02 a {
+	background-image:url(../images/common/speech_menu1_2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 26px;
+	height: 17px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+#contentsArea #speech #speech_menu .menu02 a:hover {
+	background-position: left bottom;
+}
+/* menu03 */
+#contentsArea #speech #speech_menu ul .menu03 {
+	width: 26px;
+	height: 17px;
+	margin-left:19px;
+	float:left;
+}
+#contentsArea #speech #speech_menu .menu03 a {
+	background-image:url(../images/common/speech_menu1_3.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 26px;
+	height: 17px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+#contentsArea #speech #speech_menu .menu03 a:hover {
+	background-position: left bottom;
+}
+/* menu04 */
+#contentsArea #speech #speech_menu ul .menu04 {
+	width: 49px;
+	height: 17px;
+	margin-left:19px;
+	float:left;
+}
+#contentsArea #speech #speech_menu .menu04 a {
+	background-image:url(../images/common/speech_menu1_4.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 49px;
+	height: 17px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+#contentsArea #speech #speech_menu .menu04 a:hover {
+	background-position: left bottom;
+}
+/* menu05 */
+#contentsArea #speech #speech_menu ul .menu05 {
+	width: 18px;
+	height: 17px;
+	margin-left:42px;
+	float:left;
+}
+#contentsArea #speech #speech_menu .menu05 a {
+	background-image:url(../images/common/speech_menu1_5.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 18px;
+	height: 17px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+#contentsArea #speech #speech_menu .menu05 a:hover {
+	background-position: left bottom;
+}
+#contentsArea #speech #txt_area{
+	width:956px;
+	overflow:hidden;
+}
+#contentsArea #speech #txt_area #speech_L {
+	width: 12px;
+	height: 22px;
+	position:absolute;
+	top:64px;
+	left:21px;
+}
+#contentsArea #speech #txt_area #speech_L a {
+	background-image:url(../images/common/speech_L.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 12px;
+	height: 22px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+#contentsArea #speech #txt_area #speech_L a:hover {
+	background-position: left bottom;
+}
+#contentsArea #speech #txt_area #speech_R {
+	width: 12px;
+	height: 22px;
+	position:absolute;
+	top:64px;
+	right:21px;
+}
+#contentsArea #speech #txt_area #speech_R a {
+	background-image:url(../images/common/speech_R.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 12px;
+	height: 22px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+#contentsArea #speech #txt_area #speech_R a:hover {
+	background-position: left bottom;
+}
+#contentsArea #speech #txt_area ul {
+	width:854px;
+	display:block;
+	margin-left:50px;
+}
+#contentsArea #speech #txt_area ul li.txt {
+	font-size:23px;
+	padding-top:28px;
+	color:#FFFFFF;
+	text-align:center;
+}
+#contentsArea #recMenu {
+	background-image:url(../../images/index/recMenu_bg.png);
+	width:430px;
+	height:34px;
+	position: absolute;
+	top: 550px;
+	left: 245px;
+	line-height:25px;
+	padding:0 30px;
+}
+#contentsArea #recMenu li {
+	padding-left:28px;
+	float:left;
+	line-height:30px;
+}
+#contentsArea #recMenu li a {
+	color:#FFFFFF;
+}
+#contentsArea #recMenu li a:hover {
+	color:#FFFF00;
+}
+
+
+/*----------------------------------------------------
+	#エントリーフォーム
+----------------------------------------------------*/
+#contentsArea #recEntry_btn {
+	width: 223px;
+	height: 34px;
+	float:left;
+	position: absolute;
+	top: 550px;
+	left: 490px;
+}
+#contentsArea #recEntry_btn a {
+	background-image:url(../../images/common/recEntry_btn.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 223px;
+	height: 34px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+#contentsArea #recEntry_btn a:hover {
+	background-position: left bottom;
+}

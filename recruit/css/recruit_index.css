@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* -------------------------------------------------- 
+	Copyright: (c)visual and echo japan
+	Created: 2013.08.20
+ -------------------------------------------------- */
+ 
+body {
+	font-family: "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+    min-width:960px;
+    min-height:642px;
+	font-size:12px;
+	line-height:180%;
+	margin: 0;
+	padding: 0;
+	color:#333333;
+	position: relative;
+	background-color:#333333;
+}
+
+/*----------------------------------------------------
+	#contentsArea
+----------------------------------------------------*/
+#contentsArea {
+	background-image:url(../images/index/rec_bg_off.png);
+	width:960px;
+	height:642px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -480px;
+	margin-top: -321px;
+    min-width:960px;
+    min-height:642px;
+	overflow:hidden;
+}
+#contentsArea #bg_on {
+	width: 960px;
+	height: 550px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#contentsArea #bg_off {
+	width: 960px;
+	height: 550px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#contentsArea #bg_all {
+	width: 960px;
+	height: 550px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:1;
+}
+
+/*----------------------------------------------------
+	#時代を先駆ける…
+----------------------------------------------------*/
+#contentsArea #signboard_on {
+	position: absolute;
+	top: 6px;
+	right: 200px;
+}
+#contentsArea #signboard_off {
+	position: absolute;
+	top: 6px;
+	right: 200px;
+}
+
+/*----------------------------------------------------
+	#センターネオン
+----------------------------------------------------*/
+#contentsArea #neon_off {
+	position: absolute;
+	top: 257px;
+	left: 455px;
+}
+#contentsArea #neon_on {
+	position: absolute;
+	top: 257px;
+	left: 455px;
+}
+#contentsArea #icon_04 {
+	width:128px;
+	height:164px;
+	position: absolute;
+	top: 257px;
+	left: 455px;
+}
+#contentsArea #icon_04_area{
+	width:128px;
+	height:164px;
+	position: absolute;
+	top: 257px;
+	left: 455px;
+}
+
+/*----------------------------------------------------
+	#宇宙船
+----------------------------------------------------*/
+#contentsArea #spaceship {
+	position: absolute;
+	top: 28px;
+	left: 567px;
+}
+#contentsArea #spaceship_building {
+	position: absolute;
+	top: 84px;
+	left: 628px;
+}
+#spaceship_cloud {
+	position: absolute;
+	top: 31px;
+	left: 567px;
+}
+#contentsArea #icon_03 {
+	width:114px;
+	height:114px;
+	position: absolute;
+	top: 20px;
+	left: 547px;
+}
+#contentsArea #icon_03_area{
+	width:114px;
+	height:114px;
+	position: absolute;
+	top: 20px;
+	left: 547px;
+}
+
+/*----------------------------------------------------
+	#屋形船
+----------------------------------------------------*/
+#contentsArea #boat {
+	position: absolute;
+	top: 419px;
+	left: 195px;
+}
+#contentsArea #icon_02 {
+	width:217px;
+	height:125px;
+	position: absolute;
+	top: 419px;
+	left: 195px;
+}
+#contentsArea #icon_02_area{
+	width:217px;
+	height:125px;
+	position: absolute;
+	top: 419px;
+	left: 195px;
+}
+
+/*----------------------------------------------------
+	#列車
+----------------------------------------------------*/
+#contentsArea #trainroad_on, #trainroad_off {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+}
+#contentsArea #train {
+	position: absolute;
+	top: 50px;
+	left: 158px;
+}
+#contentsArea #icon_01 {
+	width:150px;
+	height:120px;
+	position: absolute;
+	top: 195px;
+	left: 280px;
+}
+#contentsArea #icon_01_area{
+	width:150px;
+	height:120px;
+	position: absolute;
+	top: 195px;
+	left: 280px;
+}

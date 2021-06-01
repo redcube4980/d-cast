@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* -------------------------------------------------- 
+	Copyright: (c)visual and echo japan
+	Created: 2013.08.20
+ -------------------------------------------------- */
+
+/*----------------------------------------------------
+	共通
+----------------------------------------------------*/
+
+html, body {
+	height:100%;
+}
+div {zoom: 1;/*for IE 5.5-7*/}
+div:after {/*for modern browser*/  content: ".";clear: both;display: block; line-height: 0; height: 0;  visibility: hidden;}  
+img{
+  vertical-align:bottom;
+}
+
+/* リンク
+----------------------------------------------------*/
+a {
+	color:#FFF;
+	text-decoration:none !important;
+}
+a:link {
+	color:#999;
+	text-decoration:none;
+}
+a:visited {
+	color:#FFF;
+	text-decoration:none;
+}
+a:active {
+	color:#FFF;
+	text-decoration:none;
+}
+a:hover {
+	color:#FFFF00;
+	text-decoration:underline;
+}
+
+
+/*----------------------------------------------------
+	#page（ページ全体）
+----------------------------------------------------*/
+#page {
+    position:relative;
+	width:100%;
+	height:100%;
+	z-index:0;
+}
+
+/*----------------------------------------------------
+	footer#global_footer
+----------------------------------------------------*/
+#global_footer{
+	width:100%;
+	color:#FFFFFF;
+	background-color:#000;
+    position:fixed;
+    bottom:0;
+	z-index:999 ;
+}
+#global_footer #global_footer_area{
+	width:876px;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+}
+#global_footer li { float: left !important; }
+#global_footer li:after { content: "|"; padding: 0 5px; color:#FFFFFF !important;}
+#global_footer #copyright { line-height:18px; float: left; padding:0 0 10px 0;}
+
+#global_footer_area_txtL {
+	width: 876px;
+	padding: 10px 0px 0px 0px;
+	float: left;
+}
+
+#global_footer_area_txtR {
+	padding: 10px 0px 0px 0px;
+	float: left;
+}
+.footer_img {
+    width: 245px;
+    float: right
+}
+/*
+	padding: 7px 0px 0px 0px;
+	width: 180px;
+*/
+

@@ -1,0 +1,35 @@
+エントリーの情報は下記の通りです。
+
+※ #####expl##### ※
+姓　　名： #####namefamily#####  #####namefirst#####
+セイメイ： #####rubyfamily#####  #####rubyfirst#####
+生年月日： #####birthyear##### 年 #####birthmon##### 月 #####birthday##### 日
+
+◎連絡先
+M a i l ： #####mailpc#####
+携帯Mial： #####mailcell#####
+郵便番号： #####zip#####
+住　　所： #####add#####
+電話番号： #####phone#####
+携帯番号： #####phonecell#####
+
+◎緊急連絡先 #####emgcall#####
+郵便番号： #####emgzip#####
+住　　所： #####emgadd#####
+電話番号： #####emgphone#####
+
+◎学校情報
+学校種別： #####schoolgrade#####
+学 校 名： #####schoolname#####
+学部学科： #####schoolfaculty#####
+文理区分： #####schoolkind#####
+卒業年月： #####graduateyear##### 年 #####graduatemon##### 月
+
+◎資　　格
+#####license#####
+
+◎自己紹介
+#####intro#####
+
+◎そ の 他
+#####etc#####

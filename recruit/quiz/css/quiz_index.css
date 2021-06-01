@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* -------------------------------------------------- 
+	Copyright: (c)visual and echo japan
+	Created: 2013.08.20
+ -------------------------------------------------- */
+ 
+body {
+	font-family: "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+    min-width:960px;
+    min-height:550px;
+	font-size:12px;
+	line-height:180%;
+	margin: 0;
+	padding: 0;
+	color:#FFF;
+	position: relative;
+	background-color:#333333;
+}
+
+/*----------------------------------------------------
+	#contentsArea
+----------------------------------------------------*/
+#contentsArea {
+	background-image:url(../images/index/bg.jpg);
+	width:960px;
+	height:550px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -480px;
+	margin-top: -275px;
+    min-width:960px;
+    min-height:550px;
+	overflow:hidden;
+}
+
+/*----------------------------------------------------
+	#満貫 黒子
+----------------------------------------------------*/
+#quiz_top1_0,
+#quiz_top1_1,
+#quiz_top1_2,
+#quiz_top1_3 {
+	width:240px;
+	height:550px;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+	display:none;
+}
+
+/*----------------------------------------------------
+	#砂鋳 遠江
+----------------------------------------------------*/
+#quiz_top2_0,
+#quiz_top2_1,
+#quiz_top2_2,
+#quiz_top2_3 {
+	width:240px;
+	height:550px;
+	position:absolute;
+	top:0;
+	left:240px;
+	z-index:1;
+	display:none;
+}
+
+/*----------------------------------------------------
+	#羽車 乃津流
+----------------------------------------------------*/
+#quiz_top3_0,
+#quiz_top3_1,
+#quiz_top3_2,
+#quiz_top3_3 {
+	width:240px;
+	height:550px;
+	position:absolute;
+	top:0;
+	left:480px;
+	z-index:1;
+	display:none;
+}
+
+/*----------------------------------------------------
+	#外胴 筐
+----------------------------------------------------*/
+#quiz_top4_0,
+#quiz_top4_1,
+#quiz_top4_2,
+#quiz_top4_3 {
+	width:240px;
+	height:550px;
+	position:absolute;
+	top:0;
+	left:720px;
+	z-index:1;
+	display:none;
+}

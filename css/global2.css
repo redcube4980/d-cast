@@ -1,0 +1,111 @@
+body{
+	text-align:center;
+	margin:0;
+	padding:0;
+	font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	background-repeat: repeat-x;
+}
+
+#wrapper{
+	text-align:left;
+	width:780px;
+	padding:0;
+	margin-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+}
+/************ ヘッダー、トップメニュー ************/
+
+#header{
+	width:780px;
+	height:59px;
+	margin:0;
+	padding:0;
+	background-image: url(../images/header.gif);
+	background-repeat: no-repeat;
+}
+#topmenu{
+	width:780px;
+	height:29px;
+	float:letf;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	padding-bottom:0;
+	padding-top:0;
+	padding-left:14px;
+	padding-right:0;
+	background-image: url(../images/header2.gif);
+	background-repeat: no-repeat;
+}
+
+#topmenu a{
+	color:#ffffff;
+	font-weight:bold;
+	font-size:0.8em;
+	display:block;
+	width:123px;
+	line-height:2.15em;
+	background-image:url(../images/b_base.gif);
+	background-repeat:no-repeat;
+	text-decoration:none;
+}
+#topmenu a:hover{
+	background-image:url(../images/b_over.gif);
+	text-decoration:none;
+	color:#666666;
+
+}
+#topmenu a{
+	color:#ffffff;
+	font-weight:bold;
+	font-size:0.8em;
+	display:block;
+	width:123px;
+	line-height:2.15em;
+	background-image:url(../images/b_base.gif);
+	background-repeat:no-repeat;
+	text-decoration:none;
+}
+#topmenu a:hover{
+	background-image:url(../images/b_over.gif);
+	text-decoration:none;
+	color:#666666;
+
+}
+
+#button{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.button{
+	float:left;
+	margin:0 2px 0 0;
+	padding:0;
+	text-align: center;
+}
+box {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 80px;
+}
+#right p {
+	font-size: 0.78em;
+	line-height: 150%;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	padding-left: 25px;
+	margin: 0px;
+	padding-right: 25px;
+	color: #535353;
+}
+.color1{
+	color: #535353;
+}

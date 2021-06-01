@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 655 320" style="enable-background:new 0 0 655 320;" xml:space="preserve">
+<style type="text/css">
+	.st0{font-family:'UDShinGoPr6N-Light-90ms-RKSJ-H';}
+	.st1{font-size:344.1247px;}
+</style>
+<font horiz-adv-x="1000">
+<!-- (c) Copyright 2012 Adobe Systems Incorporated. All rights reserved. UD Shin Go Light is a trademark of Morisawa Inc. -->
+<font-face font-family="UDShinGoPr6N-Light-90ms-RKSJ-H" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="1000" d="M124,880l0,-1000l752,0l0,1000M168,-35l0,830l305,-415M500,417l-305,419l610,0M832,795l0,-830l-305,415M500,343l305,-419l-610,0z"/>
+<glyph unicode="&#x5165;" horiz-adv-x="1000" d="M197,794l0,-55l274,0C471,264 231,84 38,-25l32,-49C410,111 474,351 511,546C531,407 578,155 926,-72l33,55C816,63 539,254 539,794z"/>
+<glyph unicode="&#x529B;" horiz-adv-x="1000" d="M414,681C414,648 412,623 412,613l-359,0l0,-53l354,0C380,283 295,118 27,-27l36,-47C328,64 443,254 468,560l394,0C858,433 847,139 828,58C820,23 809,-23 717,-20l-136,4l9,-61l130,0C852,-77 870,-9 878,23C897,99 915,309 924,613l-453,0C473,636 473,658 473,679l2,158l-60,0z"/>
+</font>
+
+	<text transform="matrix(1 0 0 1 -10.25 291.7422)" class="st0 st1">入力</text>
+</svg>

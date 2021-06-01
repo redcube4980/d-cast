@@ -1,0 +1,310 @@
+@charset "utf-8";
+/* -------------------------------------------------- 
+	Copyright: (c)visual and echo japan
+	Created: 2013.08.20
+ -------------------------------------------------- */
+ 
+body {
+	font-family: "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+    min-width:960px;
+    min-height:584px;
+	font-size:12px;
+	line-height:180%;
+	margin: 0;
+	padding: 0;
+	color:#FFF;
+	position: relative;
+	background-color:#333;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*----------------------------------------------------
+	#contentsArea
+----------------------------------------------------*/
+#contentsArea {
+	background-image:url(../images/girl_02/bg.png);
+	width:960px;
+	height:584px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -480px;
+	margin-top: -292px;
+    min-width:960px;
+    min-height:584px;
+	overflow:hidden;
+}
+
+
+/*----------------------------------------------------
+	#キャラクター画像
+----------------------------------------------------*/
+#contentsArea #girl1_01 {
+	width:247px;
+	height:538px;
+	position: absolute;
+	top: 10px;
+	left: 340px;
+}
+#contentsArea #girlL1_01 {
+	width:361px;
+	height:546px;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+}
+#contentsArea #girl2_01 {
+	width:180px;
+	height:516x;
+	position: absolute;
+	top: 20px;
+	left: 200px;
+}
+#contentsArea #girlL2_01 {
+	width:482px;
+	height:546px;
+	position: absolute;
+	top: 2px;
+	left: 522px;
+}
+#contentsArea #girl2_02 {
+	width:248px;
+	height:538px;
+	position: absolute;
+	top: 10px;
+	left: 375px;
+}
+#contentsArea #girlL2_02 {
+	width:328px;
+	height:546px;
+	position: absolute;
+	top: 2px;
+	left: 32px;
+}
+#contentsArea #girl3_01 {
+	width:288px;
+	height:509px;
+	position: absolute;
+	top: 28px;
+	left: 490px;
+}
+#contentsArea #girlL3_01 {
+	width:602px;
+	height:546px;
+	position: absolute;
+	top: 2px;
+	left: 19px;
+}
+/*キャラクターネーム*/
+#contentsArea #girl_name {
+	width:377px;
+	height:104px;
+	position: absolute;
+	top: 2px;
+	left: 602px;
+}
+ 
+
+/*----------------------------------------------------
+	#クイズ答え
+----------------------------------------------------*/
+#contentsArea #answer1_1 {
+	width: 508px;
+	height: 48px;
+	position: absolute;
+	top: 260px;
+	left: 270px;
+}
+#contentsArea #answer1_1 a {
+	background-image:url(../images/girl_02/answer1_1.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 508px;
+	height: 48px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+	line-height:48px;
+}
+#contentsArea #answer1_1 a:hover {
+	background-position: left bottom;
+}
+#contentsArea #answer1_2 {
+	width: 508px;
+	height: 48px;
+	position: absolute;
+	top: 310px;
+	left: 210px;
+}
+#contentsArea #answer1_2 a {
+	background-image:url(../images/girl_02/answer1_2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 508px;
+	height: 48px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+	line-height:48px;
+}
+#contentsArea #answer1_2 a:hover {
+	background-position: left bottom;
+}
+#contentsArea #answer1_3 {
+	width: 508px;
+	height: 48px;
+	position: absolute;
+	top: 360px;
+	left: 300px;
+}
+#contentsArea #answer1_3 a {
+	background-image:url(../images/girl_02/answer1_3.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 508px;
+	height: 48px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+	line-height:48px;
+}
+#contentsArea #answer1_3 a:hover {
+	background-position: left bottom;
+}
+
+#contentsArea #answer2_1 {
+	width: 508px;
+	height: 48px;
+	position: absolute;
+	top: 260px;
+	left: 270px;
+}
+#contentsArea #answer2_1 a {
+	background-image:url(../images/girl_02/answer2_1.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 508px;
+	height: 48px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+	line-height:48px;
+}
+#contentsArea #answer2_1 a:hover {
+	background-position: left bottom;
+}
+#contentsArea #answer2_2 {
+	width: 508px;
+	height: 48px;
+	position: absolute;
+	top: 310px;
+	left: 210px;
+}
+#contentsArea #answer2_2 a {
+	background-image:url(../images/girl_02/answer2_2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 508px;
+	height: 48px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+	line-height:48px;
+}
+#contentsArea #answer2_2 a:hover {
+	background-position: left bottom;
+}
+#contentsArea #answer2_3 {
+	width: 508px;
+	height: 48px;
+	position: absolute;
+	top: 360px;
+	left: 300px;
+}
+#contentsArea #answer2_3 a {
+	background-image:url(../images/girl_02/answer2_3.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 508px;
+	height: 48px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+	line-height:48px;
+}
+#contentsArea #answer2_3 a:hover {
+	background-position: left bottom;
+}
+
+#contentsArea #answer3_1 {
+	width: 508px;
+	height: 48px;
+	position: absolute;
+	top: 260px;
+	left: 270px;
+}
+#contentsArea #answer3_1 a {
+	background-image:url(../images/girl_02/answer3_1.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 508px;
+	height: 48px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+	line-height:48px;
+}
+#contentsArea #answer3_1 a:hover {
+	background-position: left bottom;
+}
+#contentsArea #answer3_2 {
+	width: 508px;
+	height: 48px;
+	position: absolute;
+	top: 310px;
+	left: 210px;
+}
+#contentsArea #answer3_2 a {
+	background-image:url(../images/girl_02/answer3_2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 508px;
+	height: 48px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+	line-height:48px;
+}
+#contentsArea #answer3_2 a:hover {
+	background-position: left bottom;
+}
+#contentsArea #answer3_3 {
+	width: 508px;
+	height: 48px;
+	position: absolute;
+	top: 360px;
+	left: 300px;
+}
+#contentsArea #answer3_3 a {
+	background-image:url(../images/girl_02/answer3_3.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 508px;
+	height: 48px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+	line-height:48px;
+}
+#contentsArea #answer3_3 a:hover {
+	background-position: left bottom;
+}
+
+/*----------------------------------------------------
+	#ご褒美プロフィール
+----------------------------------------------------*/
+#contentsArea #profile{
+	position: absolute;
+	top: 85px;
+	left: 555px;
+}

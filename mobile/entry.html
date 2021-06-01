@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="大同キャスティングス" />
+<meta name="keywords" content="大同キャスティングス" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+<title>エントリーフォーム｜大同キャスティングス</title>
+
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/entry.css" />
+
+<!-- jQuery3.1.1 UI1.12.1 -->
+<script type="text/javascript" src="/jquery3/jquery.js"></script>
+<script type="text/javascript" src="/jquery3/ui/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="/jquery3/ui/jquery-ui.min.css" />
+<!-- Bootstrap -->
+<script type="text/x-javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+<link  rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+
+<script language="javascript">
+<!--
+$(function(){
+	if( $(window).width() > 600 ){
+		$('head').append('<meta name="viewport" content="target-densitydpi=device-dpi, width=1100, user-scalable=yes" />');
+	}
+
+	$('#containerSelect').load('../cgi-bin/mobileentry.cgi');
+
+	//各ボタンの機能
+	$(document).on('click','#btnNew',function(){
+		var postdata = 'exp=0&mode=jump';
+		var promiss = ajaxProc(postdata);
+		promiss.done(function(){
+			if( ret.result == 1 ){
+				location.href = 'entryform.html?exp=0';
+			} else {
+				location.href = 'entry.html';
+			}
+		});
+	});
+	$(document).on('click','#btnExp',function(){
+		var postdata = 'exp=1&mode=jump';
+		var promiss = ajaxProc(postdata);
+		promiss.done(function(){
+			$('#uploaded, #uploaded *').show();
+			if( ret.result == 1 ){
+				location.href = 'entryform.html?exp=1';
+			} else {
+				location.href = 'entry.html';
+			}
+		});
+	});
+	$(document).on('click','#btnPre',function(){
+		var postdata = 'exp=2&mode=jump';
+		var promiss = ajaxProc(postdata);
+		promiss.done(function(){
+			$('#uploaded, #uploaded *').show();
+			if( ret.result == 1 ){
+				location.href = 'entryform.html?exp=2';
+			} else {
+				location.href = 'entry.html';
+			}
+		});
+	});
+});
+
+function ajaxProc(postdata) {
+	var defer = $.Deferred();
+	var jqxhr = $.ajax({
+		type: "GET",
+		url: '../cgi-bin/mobileentry.cgi',
+		data: postdata,
+		dataType: 'json',
+		processData : false,
+		contentType : false
+	}).always(function(msg){
+		ret = msg;
+		defer.resolve();
+	});
+	return defer;
+}
+//-->
+</script>
+
+<style type="text/css">
+<!--
+-->
+</style>
+
+</head>
+<body>
+<div id="header">
+	<div id="header_logo">
+		<a href="http://www.d-cast.jp/mobile/"><img src="images/d-cast.svg" alt="imageAutoHeight" /></a>
+	</div>
+	<h1>エントリー</h1>
+</div>
+<div id="containerSelect">
+</div>
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="大同キャスティングス" />
+<meta name="keywords" content="大同キャスティングス" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+<title>エントリーフォーム｜大同キャスティングス</title>
+
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/entry.css" />
+
+<!-- jQuery3.1.1 UI1.12.1 -->
+<script type="text/javascript" src="/jquery3/jquery.js"></script>
+<script type="text/javascript" src="/jquery3/ui/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="/jquery3/ui/jquery-ui.min.css" />
+<!-- Bootstrap -->
+<script type="text/x-javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+
+<!-- jQuery Steps -->
+<script type="text/javascript" src="/jquery3/plugin/jquery.steps/jquery.steps.min.js"></script>
+<link rel="stylesheet" href="/jquery3/plugin/jquery.steps/jquery.steps.css">
+
+<!-- ZIPCloudAPI 郵便番号⇒住所 jQueryPlugin-->
+<script type="text/javascript" src="/jquery3/plugin/zipcloud/jquery.zipcloud.js"></script>
+<link rel="stylesheet" href="/jquery3/plugin/zipcloud/jquery.zipcloud.css" />
+
+<script language="javascript">
+<!--
+$(function(){
+	if( $(window).width() > 600 ){
+		$('head').append('<meta name="viewport" content="target-densitydpi=device-dpi, width=1100, user-scalable=yes" />');
+	}
+
+	var getVal = getUrlVars();
+	$('input#exp').val( getVal.exp );
+
+	$("#zip").zipcloud({
+		zip:'#zip',
+		addtype:'1',
+		add1:"#add",
+		type:'hover',
+		disp:'#add'
+	});
+	$("#emgzip").zipcloud({
+		zip:'#emgzip',
+		addtype:'1',
+		add1:"#emgadd",
+		type:'hover',
+		disp:'#emgadd'
+	});
+
+	$("input.async_chk[type=text]").on('blur' ,function(){
+		var msglocate = $(this).attr('msg');
+		var checkmode = $(this).attr('id');
+		var postdata = $(this).attr('name') + "=" + encodeURIComponent($(this).val()) + "&sp=1&mode=" + checkmode;
+		var promiss = ajaxProcChk(postdata);
+		promiss.done(function(){
+			if( ret[checkmode] == 1){
+				$('#' + msglocate ).css('display', 'none');
+			} else {
+				$('#' + msglocate ).css('display', 'inline');
+			}
+		});
+		function ajaxProcChk(postdata) {
+			var defer = $.Deferred();
+			var jqxhr = $.ajax({
+				type: "POST",
+				url: '/cgi-bin/entryform.cgi',
+				data: postdata,
+				dataType: 'json',
+				processData : false,
+				contentType : false
+			}).always(function(msg){
+				ret = msg;
+				defer.resolve();
+			});
+			return defer;
+		}
+	});
+	$("input.async_chk[type=text]").on('focus' ,function(){
+		$('#' + $(this).attr('msg') ).css('display', 'none');
+	});
+});
+
+var getUrlVars = function(){
+	var vars = {};
+	var param = location.search.substring(1).split('&');
+	for( var i = 0; i < param.length; i++ ){
+		var keySearch = param[i].search(/=/);
+		var key = '';
+		if(keySearch != -1) key = param[i].slice(0, keySearch);
+		var val = param[i].slice(param[i].indexOf('=', 0) + 1);
+		if(key != '') vars[key] = decodeURI(val);
+	}
+	return vars;
+}
+//-->
+</script>
+
+<style type="text/css">
+<!--
+.msgErr {
+	display:none;
+	color:crimson;
+	font-size:12px;
+}
+#btnRevision {
+	display:none;
+}
+-->
+</style>
+</head>
+<body>
+<div id="header">
+	<div id="header_logo">
+		<a href="http://www.d-cast.jp/mobile/"><img src="images/d-cast.svg" alt="imageAutoHeight" /></a>
+	</div>
+	<h1>エントリー</h1>
+</div>
+<div id="container">
+	<form id="frmEntry" action="">
+		<h3><img src="images/step1.svg" alt="入力" class="imgAutoHeight" /></h3>
+		<fieldset>
+			<h4 class="stepno">入力(1/4)</h4>
+			<h5 class="mark_requierd">氏名</h5>
+			<div class="inpuit_fieldset">
+				<label for="namefamily">姓&nbsp;</label>
+				<input type="text" id="namefamily"  name="namefamily" value="" class="async_chk" msg="namefamilyErr" />&nbsp;
+				<label for="namefirst">名&nbsp;&nbsp;</label>
+				<input type="text" id="namefirst" name="namefirst" value="" class="async_chk" msg="namefirstErr" /><br>
+				<span class="cap">※旧字は使用はお控え下さい。<br>(JIS第1・2水準漢字をご使用下さい)</span><br>
+				<span id="namefamilyErr" class="msgErr">※姓が未入力もしくは入力内容に誤りがあります。<br></span>
+				<span id="namefirstErr" class="msgErr">※名が未入力もしくは入力内容に誤りがあります。<br></span>
+				<input type="hidden" id="exp" name="exp" value="" />
+    	</div>
+			<h5 class="mark_requierd">ふりがな</h5>
+			<div class="inpuit_fieldset">
+				<label for="rubyfamily">せい&nbsp;</label>
+				<input type="text" id="rubyfamily"  name="rubyfamily" value="" class="async_chk" msg="rubyfamilyErr" />&nbsp;
+				<label for="rubyfirst">めい&nbsp;</label>
+				<input type="text" id="rubyfirst"  name="rubyfirst" value="" class="async_chk" msg="rubyfirstErr" /><br>
+				<span id="rubyfamilyErr" class="msgErr">※せいが未入力もしくは入力内容に誤りがあります。<br></span>
+				<span id="rubyfirstErr" class="msgErr">※めいが未入力もしくは入力内容に誤りがあります。<br></span>
+			</div>
+			<h5 class="mark_requierd">生年月日</h5>
+			<div class="inpuit_fieldset">
+				<input type="text" value="" id="birthyear" name="birthyear" class="async_chkc" msg="birthdayErr" />&nbsp;年&nbsp;
+				<select id="brithmon" name="birthmon" class="async_chkc" msg="birthdayErr"> 
+					<option value=""></option>
+					<option value="1">1</option><option value="2">2</option><option value="3">3</option>
+					<option value="4">4</option><option value="5">5</option><option value="6">6</option>
+					<option value="7">7</option><option value="8">8</option><option value="9">9</option>
+					<option value="10">10</option><option value="11">11</option><option value="12">12</option>
+				</select>&nbsp;月&nbsp;
+				<select id="brithday" name="birthday" class="async_chkc" msg="birthdayErr"> 
+					<option value=""></option>
+					<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option>
+					<option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+					<option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option>
+					<option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option>
+					<option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29" class="monfeb">29</option><option value="30" class="monfebleap">30</option><option value="31" class="monshort">31</option>
+				</select>&nbsp;日<br>
+				<span id="birthdayErr" class="msgErr">※生年月日を正しく選択して下さい。<br></span>
+			</div>
+			<h5 class="mark_requierd">メールアドレス</h5>
+			<div class="inpuit_fieldset">
+				<lebtl for="mailpc">ＰＣ</lebtl>
+				<input type="text" id="mailpc" name="mailpc" value="" class="async_chk" msg="mailErr"/><br>
+				<label for="mailcell">携帯</label>
+				<input type="text" id="mailcell" name="mailcell" value="" class="async_chk" msg="mailErr" /><br>
+				<span id="mailinputErr" class="msgErr">※どちらかは必ず入力してください。</span><br>
+				<span id="mailErr" class="msgErr">※メールアドレスを正しく入力して下さい。<br></span>
+				<span id="mailcellErr" class="msgErr">※携帯メールアドレスを正しく入力して下さい。<br></span>
+			</div>
+			<h5 class="mark_requierd">現住所</h5>
+			<div class="inpuit_fieldset">
+				<label type="cl2">郵便番号</label>
+				<input type="text" id="zip" name="zip" value="" class="" /><br>
+				<span class="cap">※郵便番号は(-)を入れずに入力して下さい。(例:4550022)</span><br>
+				<span id="zipErr" class="msgErr">※郵便番号が未入力もしくは入力内容に誤りがあります。<br></span>
+				<label for="add">住所</label>
+				<input type="text" id="add" name="add" value="" class="async_chk" msg="addErr" /><br>
+				<span id="addErr" class="msgErr">※住所を正しく入力して下さい。<br></span>
+			</div>
+			<h5 class="mark_requierd">電話番号</h5>
+			<div class="inpuit_fieldset">
+				<label for="phonecell">携帯</label>
+				<input type="text" id="phonecell" name="phonecell" value="" class="async_chk" msg="phonecellErr" /><br>
+				<span id="phonecellErr" class="msgErr">※携帯電話番号を正しく入力して下さい。<br></span>
+				<label for="phone">自宅</label>
+				<input type="text" id="phone" name="phone" value="" class="async_chk" msg="phoneErr" /><br>
+				<span class="cap">※電話番号は(-)を入れずに入力して下さい。(例:0526915191)</span><br>
+				<span id="phoneinputErr" class="msgErr">※電話番号のどちらかは必ず入力してください。</span><br>
+				<span id="phoneErr" class="msgErr">※電話番号を正しく入力して下さい。<br></span>
+			</div>
+			<h5 class="mark_requierd">休暇中の連絡先</h5>
+			<div class="inpuit_fieldset">
+				<input class="input" type="checkbox" name="emgclass" id="emgclass" value="1"><span class="caps">&nbsp;現住所と同じ</span><br>
+				<span id="emgclassErr" class="msgErr">※休暇中の連絡先を正しく入力して下さい。<br></span>
+				<label for="emgzip">郵便番号</label>
+				<input type="text" id="emgzip" name="emgzip" value="" class="" /><br>
+				<span class="cap">※郵便番号は(-)をいれずに入力して下さい。(例:4550022)</span><br>
+				<span id="emgzipErr" class="msgErr">※郵便番号が未入力もしくは入力内容に誤りがあります。<br></span>
+				<label for="emgadd">住所</label>
+				<input id="emgadd" type="text" name="emgadd" value="" class="input" /><br>
+				<span id="emgaddErr" class="msgErr">※住所を正しく入力して下さい。<br></span>
+				<label class="emgphone">電話</label>
+				<input type="text" id="emgphone" name="emgphone" value="" class="async_chk" msg="emgphoneErr" /><br>
+				<span class="cap">※電話番号は(-)を入れずに入力して下さい。(例:0526915191)</span><br>
+				<span id="emgphoneErr" class="msgErr">※電話番号を正しく入力して下さい。<br></span>
+			</div>
+			<h5 class="mark_requierd">学校情報</h5>
+			<div class="inpuit_fieldset">
+				<label for="schoolgrade">学校種別</label><br>
+				<input type="radio" name="schoolgrade" class="async_chk schoolgrade" msg="schoolgradeErr" value="大学">&nbsp;大学&nbsp;
+				<input type="radio" name="schoolgrade" class="async_chk schoolgrade" msg="schoolgradeErr" value="大学院（修士）">&nbsp;大学院（修士）&nbsp;
+				<input type="radio" name="schoolgrade" class="async_chk schoolgrade" msg="schoolgradeErr" value="短大">&nbsp;短大&nbsp;<br>
+				<input type="radio" name="schoolgrade" class="async_chk schoolgrade" msg="schoolgradeErr" value="専門学校">&nbsp;専門学校&nbsp;
+				<input type="radio" name="schoolgrade" class="async_chk schoolgrade" msg="schoolgradeErr" value="高専">&nbsp;高専&nbsp;
+				<input type="radio" name="schoolgrade" class="async_chk schoolgrade" msg="schoolgradeErr" value="高校">&nbsp;高校&nbsp;<br>
+				<span id="schoolgradeErr" class="msgErr">※学校種別を正しく選択して下さい。<br></span>
+				<label foir="schoolname">学校名</label>
+				<input type="text" id="schoolname" name="schoolname" value="" class="async_chk" msg="schoolnameErr" /><br>
+				<span id="schoolnameErr" class="msgErr">※学校名を正しく入力して下さい。<br></span>
+				<label for="schoolfaculty">学部・学科名</label>
+				<input type="text" id="schoolfaculty" name="schoolfaculty" value="" class="async_chk" msg="schoolfacultyErr" /><br>
+				<span id="schoolfacultyErr" class="msgErr">※学部・学科名を正しく入力して下さい。<br></span>
+				<label for="schoolkind">文理区分</label>
+				<input type="radio" name="schoolkind" class="async_chk schoolkind" msg="schoolkindErr" value="文系">&nbsp;文系&nbsp;
+				<input type="radio" name="schoolkind" class="async_chk schoolkind" msg="schoolkindErr" value="理系">&nbsp;理系&nbsp;<br>
+				<span id="schoolkindErr" class="msgErr">※理系・文系を正しく選択して下さい。<br></span>
+				<label>卒業年月</label>
+				<input type="text" id="graduateyear" name="graduateyear" value="" class="async_chk" msg="graduateyearErr" />&nbsp;年
+				<select id="graduatemon" name="graduatemon" class="async_chk" msg="graduateyearErr"> 
+					<option value=""></option>
+					<option value="1">1</option><option value="2">2</option><option value="3">3</option>
+					<option value="4">4</option><option value="5">5</option><option value="6">6</option>
+					<option value="7">7</option><option value="8">8</option><option value="9">9</option>
+					<option value="10">10</option><option value="11">11</option><option value="12">12</option>
+				</select>&nbsp;月&nbsp;&nbsp;<br>
+				<span id="graduateyearErr" class="msgErr">※卒業予定年月を正しく選択して下さい。<br></span>
+			</div>
+		</fieldset>
+		<h3><img src="images/blank.svg" alt=" " class="imgAutoHeight" /></h3>
+		<fieldset>
+			<h4 class="stepno">入力(2/4)</h4>
+			<h5 class="mark_optional">資格・経験</h5>
+			<div class="inpuit_fieldset">
+				<textarea id="license" name="license" rows="12"></textarea><br>
+				<span class="cap">※TOEIC等資格、留学やサークル活動など</span>
+			</div>
+		</fieldset>
+		<h3><img src="images/blank.svg" alt=" " class="imgAutoHeight" /></h3>
+		<fieldset>
+			<h4 class="stepno">入力(3/4)</h4>
+			<h5 class="mark_optional">自己紹介</h5>
+			<div class="inpuit_fieldset">
+				<textarea id="intro" name="intro" rows="12"></textarea><br>
+				<span class="cap">※趣味・特技、誰にも負けないこと、アルバイト経験など</span>
+			</div>
+    </fieldset>
+		<h3><img src="images/blank.svg" alt=" " class="imgAutoHeight" /></h3>
+		<fieldset>
+			<h4 class="stepno">入力(4/4)</h4>
+			<h5 class="mark_optional">その他</h5>
+			<div class="inpuit_fieldset">
+				<textarea id="etc" name="etc" rows="12"></textarea><br>
+			</div>
+    </fieldset>
+		<h3><img src="images/step_conf.svg" alt="内容確認" class="imgAutoHeight" /></h3>
+		<fieldset class="clearfix">
+			<div class="contReconfirm">
+				<div>氏名</div>
+				<div><span class="halfwidth" disp="namefamily"></span><span class="halfwidth" disp="namefirst"></span></div>
+			</div>
+			<div class="contReconfirm">
+				<div>ふりがな</div>
+				<div><span class="halfwidth" disp="rubyfamily"></span><span class="halfwidth" disp="rubyfirst"></span></div>
+			</div>
+			<div class="contReconfirm">
+				<div>生年月日</div>
+				<div><span disp="birthyear"></span>年<span disp="birthmon"></span>月<span disp="birthday"></span>日</div>
+			</div>
+			<div class="contReconfirm">
+				<div>メールアドレス</div>
+				<div>
+					<span disp="mailpc"><br></span><br>
+					<span disp="mailcell"><br></span><br>
+				</div>
+			</div>
+			<div class="contReconfirm">
+				<div>現住所</div>
+				<div>
+					〒<span disp="zip"><br></span><br>
+					<span disp="add"><br></span><br>
+				</div>
+			</div>
+			<div class="contReconfirm">
+				<div>電話番号</div>
+				<div>
+					自宅：<span disp="phone"><br></span><br>
+					携帯：<span disp="phonecell"><br></span><br>
+				</div>
+			</div>
+			<div class="contReconfirm">
+				<div>休暇中の<br>連絡先</div>
+				<div>
+					〒<span disp="emgzip"><br></span><br>
+					<span disp="emgadd"><br></span><br>
+					TEL:<span disp="emgphone"><br></span><br>
+				</div>
+			</div>
+			<div class="contReconfirm">
+				<div>電話番号</div>
+				<div>
+					自宅：<span disp="phone"><br></span><br>
+					携帯：<span disp="phonecell"><br></span><br>
+				</div>
+			</div>
+			<div class="contReconfirm">
+				<div>学校情報</div>
+				<div>
+					<span class="disp_schoolgrade" disp="schoolgrade"></span>
+					<span disp="schoolname"><br></span><br>
+					<span disp="schoolfaculty"><br></span>(<span disp="schoolkind"></span>)<br>
+					<span disp="graduateyear"><br></span>年<span disp="graduatemon"></span>月<br>
+				</div>
+			</div>
+			<div class="contReconfirm">
+				<div>資格・経験</div>
+				<div><span disp="license"><br></span></div>
+			</div>
+			<div class="contReconfirm">
+				<div>自己紹介</div>
+				<div><span disp="intro"><br></span></div>
+			</div>
+			<div class="contReconfirm">
+				<div>その他</div>
+				<div><span disp="etc"><br></span></div>
+			</div>
+		</fieldset>
+		<h3><img src="images/step_result.svg" alt="応募完了" class="imgAutoHeight" /></h3>
+		<fieldset>
+			<h3 class="thanks">ご応募ありがとうございました。</h3>
+			<p class="thanks">
+				ご登録いただいたメールアドレスに受付完了メールを送信いたしましたので、内容をご確認ください。
+			</p>
+		</fieldset>
+	</form>
+<script language="javascript">
+var form = $("#frmEntry").show();
+ 
+form.steps({
+	headerTag: "h3",
+	bodyTag: "fieldset",
+	transitionEffect: "slideLeft",
+	labels: {
+		next: "次へ",
+		previous: "戻る",
+		finish: "この内容で応募する"
+	},
+	enableFinishButton: false,
+	onStepChanged: function (event, currentIndex, priorIndex){
+		if( currentIndex < priorIndex ){
+			for( i = priorIndex; i > currentIndex; i-- ){
+				$('.steps ul li:nth-child(' + (i + 1) + ')').removeClass('done').addClass('disabled');
+			}
+		}
+		if( currentIndex == 4 ){
+			$('.actions ul li:nth-child(1) a').html('内容を修正する');
+			$('.actions ul li:nth-child(2) a').html('この内容で応募する');
+		} else if( currentIndex == 5 ) {
+			$('.actions ul li:nth-child(1) a').html('TOPへ戻る');
+		} else {
+			$('.actions ul li:nth-child(1) a').html('戻る');
+			$('.actions ul li:nth-child(2) a').html('次へ');
+		}
+	},onStepChanging: function (event, currentIndex, newIndex) {
+		var ret = true;
+		if( currentIndex == 5 && newIndex == 4 ) location.href = '/mobile/';
+		if( (currentIndex == 0 && newIndex == 1) || (currentIndex == 3 && newIndex == 4) ){
+			var msglocate = $(this).attr('msg');
+			var postdata = $('#frmEntry').serialize() + '&sp=1&mode=sc';
+			$('.msgErr').css('display', 'none');
+			$.ajax({
+				type: "POST",
+				async: false,
+				url: '/cgi-bin/entryform.cgi',
+				data: postdata,
+				dataType: 'json',
+				success: function(msg){
+					if( msg.result == 1){
+						for(var key in msg){
+							if( key != 'result' ){
+								$('*[disp=' + key + ']').html(msg[key]);
+							}
+						}
+					} else {
+						for(var key in msg){
+							if( key != 'result' ){
+								$('#' + key).css('display', 'inline');
+							}
+						}
+						ret = false;
+					}
+				}
+			})
+		}
+		if( currentIndex == 4 && newIndex == 5 ){
+			var msglocate = $(this).attr('msg');
+			var postdata = $('#frmEntry').serialize() + '&sp=1&mode=sm';
+			$('.msgErr').css('display', 'none');
+			$.ajax({
+				type: "POST",
+				async: false,
+				url: '/cgi-bin/entryform.cgi',
+				data: postdata,
+				dataType: 'json',
+				success: function(msg){
+					if( msg.result != 1){
+						for(var key in msg){
+							if( key != 'result' ){
+								$('#' + key).css('display', 'inline');
+							}
+						}
+						ret = false;
+					}
+				}
+			})
+		}
+		return ret;
+	}
+});
+$(function(){
+	var fixedHeight = $('html').height() - $('#header').height() - $('.wizard > .steps').height() - $('.wizard > .actions').height();
+	$('.wizard > .content').height(fixedHeight);
+});
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="大同キャスティングス" />
+<meta name="keywords" content="大同キャスティングス" />
+
+<title>エントリーフォーム｜大同キャスティングス</title>
+
+<link rel="stylesheet" href="css/html5-doctor-reset-stylesheet.css" />
+<link rel="stylesheet" href="css/style.css" />
+
+<!-- jQueryUI -->
+<script type="text/javascript" src="jquery/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui.min.js"></script>
+<link type="text/css" rel="stylesheet" href="jquery/themes/excite-bike/jquery-ui.css" />
+
+<script language=javascript>
+<!--
+$(function(){
+
+	$("#btnSubmit").hover(function(){
+			this.src = 'images/b_home_ov.jpg';
+	},function(){
+			this.src = 'images/b_home.jpg';
+	});
+	preload([
+		'images/b_home_ov.jpg',
+		'images/b_home.jpg'
+	]);
+
+	$("#btnSubmit").click(function(){
+		$("#frmHome").submit();
+	});
+
+});
+
+function preload(arrayOfImages) {
+	$(arrayOfImages).each(function(){
+		$('<img/>')[0].src = this;
+	});
+}
+
+//-->
+</script>
+
+<style type="text/css">
+<!--
+-->
+</style>
+
+</head>
+<body>
+
+<div id="header">
+	<div id="header1">
+		<img src="images/logo.jpg" alt="大同キャスティングス" width="248" height="46">
+	</div>
+</div>
+
+<div id="wp">
+	<img src="images/tag_entry.png" alt="エントリー" width="960" height="31">
+	<div id="main">
+		<div id="entryClose">
+			現在、エントリーは受け付けておりません。
+		</div>
+
+		<div id="buttons" class="entry">
+			<form method="GET" action="http://www.d-cast.jp" id="frmHome"></form>
+			<input type="image" src="images/b_home.jpg" id="btnSubmit" alt="TOPに戻る" /></button>
+		</div>
+
+	</div>
+</div>
+
+<footer id="global_footer">
+	<div id="global_footer_area">
+		<p class="rc"><a href="http://www.daido.co.jp/">大同特殊鋼株式会社</a></p>
+		<p id="copyright" class="lc"><small>Copyright © 大同キャスティングス All rights reserved.</small></p>
+	</div>
+</footer>
+
+</body>
+</html>

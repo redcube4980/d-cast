@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	height: 100vh;
+}
+
+#header {
+	width: 100%;
+}
+#header_logo {
+	width: 80%;
+	max-width: 640px;
+	margin: 5px auto;
+	text-align: center;
+}
+#header h1 {
+	color: white;
+	margin: 10px 0px 0px 0px;
+	padding: 10px 0px;
+	font-size: 24px;
+	font-weight: 500;
+	letter-spacing: 20px;
+	text-align: center;
+	background-color: #ff3266;
+}
+
+#containerSelect {
+	padding: 55px 0px;
+	line-height: 100px;
+	text-align: center;
+}
+
+#containerSelect button {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	background-color: transparent;
+}
+
+#entryClose{
+	font-size: 4.5vw;
+	color:crimson;
+}
+
+.wizard h4.stepno {
+	margin: 3px;
+	padding: 4px;
+	background-color: mediumAquamarine;
+	line-height: 1.6;
+	color: white;
+	display: inline;
+}
+.wizard h5 {
+	width: 100%;
+	margin-bottom: 8px;
+	padding: 8px;
+	background-color: #e0ffff;
+	font-size: 22px;
+}
+.wizard h5.mark_requierd:before {
+	content: "必須";
+	margin-right: 2px;
+	margin-bottom: 2px;
+	padding: 2px 2px 0px 2px;
+	background-color: crimson;
+	color: white;
+	font-size: 12px;
+}
+.wizard h5.mark_optional:before {
+	content: "任意";
+	margin-right: 2px;
+	margin-bottom: 2px;
+	padding: 2px 2px 0px 2px;
+	background-color: deepskyblue;
+	color: white;
+	font-size: 12px;
+}
+
+.inpuit_fieldset {
+	padding: 0px 10px;
+}
+
+.inpuit_fieldset textarea {
+	width: 90vw;
+}
+
+#namefamily, #namefirst, #rubyfamily ,#rubyfirst, #birthyear, #zip, #graduateyear {
+	width: 32vw;
+}
+
+.inpuit_fieldset * {
+	line-height: 2;
+}
+
+.wizard .contReconfirm {
+	width: 90%;
+	margin: 0 5% 5px 5%;
+	display: table;
+}
+.wizard .contReconfirm div {
+	display: table-cell;
+}
+.wizard .contReconfirm div:nth-child(1) {
+	width: 35%;
+	border-left: 5px solid #e0ffff;
+	float: left;
+}
+.wizard .contReconfirm div:nth-child(2) {
+	width: 65%;
+	float: left;
+}
+.wizard .halfwidth {
+	width: 50%;
+	float:left;
+}
+.wizard .disp_schoolgrade {
+	padding: 2px 2px 0px 2px;
+	background-color: yellow;
+}
+
+ul[role="menu"] {
+	width: 100%;
+}
+ul[role="menu"] li:first-of-type {
+	float: left;
+}
+ul[role="menu"] li:last-of-type {
+	float: right !important;
+}
+h3.thanks {
+	font-size: 20px;
+}
+p.thanks {
+	font-size: 16px;
+}
+

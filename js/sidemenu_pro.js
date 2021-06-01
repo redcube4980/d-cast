@@ -1,0 +1,14 @@
+document.write('<ul>');
+document.write('<li id="b_top"><a href="/index.html"></a></li>');
+document.write('<li id="b_pro"><a href="/product/index.html"></a></li>');
+document.write('<li id="b_way"><a href="#"></a></li>');
+document.write('<li id="b_sand"><a href="/product/way/sand.html"></a></li>');
+document.write('<li id="b_cent"><a href="/product/way/cent.html"></a></li>');
+document.write('<li id="b_dlcc"><a href="/product/way/dlcc.html"></a></li>');
+document.write('<li id="b_lost"><a href="/product/way/lost.html"></a></li>');
+document.write('<li id="b_levi"><a href="/product/way/levi.html"></a></li>');
+document.write('<li id="b_field"><a href="#"></a></li>');
+document.write('<li id="b_car"><a href="/product/field/car.html"></a></li>');
+document.write('<li id="b_grt"><a href="/product/field/grt.html"></a></li>');
+document.write('<li id="b_ind"><a href="/product/field/ind.html"></a></li>');
+document.write('<ul>');

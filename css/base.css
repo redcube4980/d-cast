@@ -1,0 +1,381 @@
+#flash{
+	width:780px;
+	margin:0;
+	background-image: url(../images/fla.jpg);
+	background-repeat: no-repeat;
+	height: 234px;
+	padding-top: 7px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 8px;
+
+}
+#contents{
+	width:780px;
+	background-image:url(../images/back.gif);
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-repeat: repeat-y;
+}
+#left{
+	width:164px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+#left ul {
+	list-style:none;
+	margin-left: 14px;
+	padding-left: 0px;
+	margin-top: 16px;
+	padding-top: 0px;
+}
+#left li {
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+
+#l_box {
+	margin: 16px 0 0 14px;
+	padding: 0px;
+	width: 135px;
+}
+#middle{
+	width:413px;
+	float:left;
+	padding:0;
+	margin: 0;
+	height: auto;
+}
+#m_box{
+	width:386px;
+	margin-top: 20px;
+	margin-left: 18px;
+	padding-top: 0px;
+	padding-left: 0;
+	height: auto;
+	background-image: url(../images/topics_back.gif);
+}
+
+#right{
+	width:183px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+#tabl{
+	margin-top: 0;
+	padding-top: 0;
+}
+#tab{
+	margin: 0;
+	padding: 0;
+}
+#r_box{
+	
+
+}
+#m_main {
+	height: auto;
+}
+#m_main p {
+	font-size: 0.8em;
+	color: #333333;
+	line-height: 140%;
+	margin: 0px;
+	padding: 10px;
+}
+#m_head {
+	margin-top: 0px;
+	height: 29px;
+	padding-top: 0px;
+}
+#r_box {
+	margin-top: 16px;
+	margin-left: 13px;
+	padding-top: 0px;
+	padding-left: 0px;
+	height: 300px;
+}
+#right img {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 2px;
+	padding-bottom: 0px;
+	padding-left: 11px;
+}
+#right p {
+	font-size: 0.78em;
+	line-height: 140%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	margin-left: 0px;
+	padding-left: 12px;
+}
+#footer {
+	height: 31px;
+	width: 780px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+.space20 {
+	padding-top: 20px;
+}
+.nospace {
+	margin: 0px;
+	padding: 0px;
+}
+#topimg2 p {
+}
+#topimg2 p {
+	font-size: 0.7em;
+	color: #2E4F9C;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 18px;
+	padding-left: 200px;
+	margin-left: 0px;
+}
+#topimg2 a {
+	text-decoration: none;
+	color: #2E4F9C;
+}
+#topimg2 a:hover {
+	color: #8FA7DE;
+}
+.nospace_tb {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.blue1 {
+	color: #2E4F9C;
+}
+.green {
+	color: #007373;
+	list-style-type: none;
+	cursor: auto;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.green1b {
+	color: #007373;
+	font-weight: bold;
+}
+.bold {
+	font-weight: bold;
+}
+.margin_r {
+	margin-right: 0px;
+}
+.no_border a{
+	text-decoration:none
+}
+.clear {
+	clear: both;
+}
+.border_dots {
+	border-bottom-width: 2px;
+	border-bottom-style: dashed;
+	border-bottom-color: #7898E3;
+}
+.photo_r {
+	float: right;
+	margin-top: 0px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	margin-left: 4px;
+	padding-top: 0px;
+	padding-right: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+}
+.photo_fl {
+	margin: 4px;
+	padding: 3px;
+	float: left;
+	border: 1px solid #CCCCCC;
+}
+.photo_l {
+	float: left;
+	margin-top: 0px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	margin-left: 4px;
+	padding-top: 0px;
+	padding-right: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+}
+.space15 {
+	margin-bottom: 0px;
+	padding-bottom: 15px;
+}
+.sbox {
+	height: auto;
+	width: 260px;
+	float: left;
+	margin-left: 0px;
+	padding-left: 0px;
+	background-color: #F2F9FB;
+	padding-right: 0px;
+}
+#wrapper #rec_contents #rec_right #rec_rightbox .space_l {
+	margin-left: 20px;
+	padding-left: 0px;
+}
+#wrapper #rec_contents #rec_right #rec_rightbox .space_l2 {
+	margin-left: 40px;
+	padding-left: 0px;
+}
+.box_middle {
+	margin-left: 15px;
+}
+.sbox a {
+	text-decoration: none;
+	color: #2D7CA8;
+}
+.sbox a:hover {
+	text-decoration: none;
+	color:#B0C4EC;
+}
+.bec {
+	background-image: url(../images/bec.gif);
+	background-repeat: no-repeat;
+	list-style-type: none;
+	background-position: 13px 3px;
+}
+#rec_right #rec_rightbox a {
+	color: #289DEC;
+}
+
+#rec_right #rec_rightbox a:hover {
+	color: #FFCC00;
+}
+
+.sbox2 {
+	height: auto;
+	width: 260px;
+	float: left;
+	margin-left: 0px;
+	padding-left: 0px;
+	background-color:#FFFFFF;
+	padding-right: 0px;
+}
+.em09 {
+	font-size: 0.9em;
+}
+.gray {
+	color: #666666;
+}
+.orange2 {
+	color: #D5760D;
+}
+.space_l3 {
+	margin-left: 80px;
+	padding-left: 0px;
+}
+.nospace_l {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+.nolist {
+	list-style-type: none;
+}
+div#m_main a{
+	color: #0A9CB6;
+}
+div#m_main a:hover {
+	color: #FFCC00;
+}
+.border_dots_gray {
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #4E5468;
+	width: 94%;
+}
+.em078 {
+	font-size: 0.78em;
+}
+.nospace_b {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.nospace_t {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+#wrapper #rec_contents #contents_line1 {
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 120px;
+	padding-left: 85px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+#contents_line1 p {
+	font-size: 0.78em;
+	line-height: 140%;
+	margin-left: 0px;
+	padding-left: 10px;
+}
+.line140 {
+	line-height: 140%;
+}
+.line190 {
+	line-height: 190%;
+	}
+.em11 {
+	font-size: 1.1em;
+}
+.pdf-text {
+    width: 270px;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+	text-decoration: none;
+}
+.pdf-content  li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 430px;
+}
+.days {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 300px;
+}
+.season {
+    width: 60px;
+}
+.縺ゅ≠縺ゅ≠ {
+	color: #007373;
+}
+#wrapper #rec_contents #rec_right #rec_rightbox .nospace {
+	font-weight: normal;
+}
+.aaaa {
+	font-size: 0.78px;
+}
+#wrapper #rec_contents #rec_right #rec_rightbox table tr td table tr td .green1b strong {
+	font-size: 0.78em;
+}
+#wrapper #rec_contents #rec_right #rec_rightbox p .orange {
+	font-weight: bold;
+	font-size: 1em;
+}

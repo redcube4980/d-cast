@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+body {
+	font-family: "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+    min-width:960px;
+	font-size:12px;
+	line-height:180%;
+	margin: 0;
+	padding: 0;
+	color:#333333;
+	position: relative;
+	background-color:#333333 !important;
+}
+
+html, body {
+	height:100%;
+}
+div.zoom {zoom: 1;/*for IE 5.5-7*/}
+div:after {/*for modern browser*/  content: ".";clear: both;display: block; line-height: 0; height: 0;  visibility: hidden;}  
+img{
+  vertical-align:bottom;
+}
+
+#header {
+	background-image:url(../images/header_bg.jpg);
+	width:100%;
+	height:56px;
+	overflow:hidden;
+}
+#header1{ width:960px;
+    height:100%;margin: 0 auto;
+}
+
+#wp {
+	width:960px;
+	margin: 0 auto;
+	margin-top:20px;
+	overflow:hidden;
+}
+
+#main {
+background-color:#fff;
+	height:100%;
+	margin-top:0px;
+	padding:10px;
+}
+
+div.entry {
+	min-height:200px;
+}
+h4#notify {
+	text-align:center;
+}
+
+/* entry------------------------------------------------------ */
+
+input ,select{
+vertical-align:0.1em;
+}
+
+#entry{font-size:12px;}
+table.tblEntryForm{width:940px;margin:0px 0 0 0;border-collapse: collapse;border:solid 1px #dadada;text-align: left; vertical-align: middle;line-height: 1.5em}
+table.tblEntryForm tr{padding:0;margin:0;}
+
+table.tblEntryForm th{font-weight:normal;padding:4px 15px 0 18px;width:100px; color:#212121; background-color:#f5f5f5;text-align: left; vertical-align: top;}
+table.tblEntryForm th.cl2{padding:4px 0px;width:90px;}
+table.tblEntryForm td{padding:1px 18px 0; color:#333333;}
+
+table.tblEntryForm th.first{padding-top:16px;padding-bottom:0;}
+td.first{padding-top:10px;padding-bottom:0;vertical-align:bottom;}
+
+table.tblEntryForm th.last{padding-top:0px;padding-bottom:18px;}
+td.last{padding-top:0px;padding-bottom:10px;}
+
+table.tblEntryForm th.line2{padding:0 0px 0 10px;margin:0;height: 2px;}
+table.tblEntryForm td.line3{padding:0 10px 0 0px;margin:0;height: 2px;}
+hr {	height:0;
+	border:0;
+	border-top:1px solid #dadada;
+	border-bottom:1px solid #fff; 
+	/*border:1px solid #dadada; /* IE7以下に適用 */
+	}
+
+input.ibutton {
+	margin:0px 10px;
+	display:inline;
+}
+
+
+
+ul {list-style:none;}
+li {float:left;}
+div.m_must{width:18px;height:14px;background-image: url("../images/m_must.png");margin-top:2px;}
+
+p.cap_g{font-size:12px; color:#969696;}
+span.cap{font-size:12px; color:#333333;}
+span.cap2{font-size:16px; color:#333333; font-weight:600;}
+
+#button.entryButtons{
+	margin: 20px auto 0;
+	width:400px;
+	text-align:center;
+}
+
+#confirmXXX {
+	display: none;
+}
+#btnSubmit {
+	display: none;
+}
+
+
+/* リンク
+----------------------------------------------------*/
+a {
+}
+a:link {
+	color:#333333;
+	text-decoration:none;
+}
+a:visited {
+	color:#FFF;
+	text-decoration:none;
+}
+a:active {
+	color:#FFF;
+	text-decoration:none;
+}
+a:hover {
+	color:#999;
+	text-decoration:underline;
+}
+
+
+
+/*----------------------------------------------------
+	footer#global_footer
+----------------------------------------------------*/
+#global_footer{
+margin:60px 0 0 0;
+	width:100%;
+	height:60px;
+	color:#FFFFFF;
+	text-align:center;
+	background-color:#000;
+/*----    position:fixed;
+    bottom:0;----*/
+}
+
+#global_footer a{
+	color:#999; 
+}
+#global_footer a:hover{
+	color:#FFF; 
+}
+
+#global_footer_area{
+	width:960px;
+	color:#FFFFFF;
+	text-align:center;
+	margin:0 auto;
+	padding:10px 0 0 0;
+	background-color:#000;
+}
+#global_footer #copyright { line-height:18px; float: left; padding:0 0 10px 0;}
+
+
+
+
+
+
+ /* multi column */
+.lc { float: left; }
+.rc { float: right; }
+
+
+ /* clearfix */
+.clr{ display: inline-table; min-height: 1%; }
+
+/* select,result,closing---------------------------------------- */
+#buttons {
+	width:722px;
+	margin:0px auto;
+	padding:40px 0px;
+}
+#buttons input{
+	margin:36px 200px 8px 200px;
+}
+
+#entryResult{
+	width:800px;
+	margin:60px auto 0px auto;
+	text-align:center;
+	color:crimson;
+	font-size:28px;
+	line-height:1em;
+}
+
+#entryClose{
+	width:800px;
+	margin:60px auto 0px auto;
+	text-align:center;
+	color:crimson;
+	font-size:28px;
+	line-height:1em;
+}
+
+h4 {
+	color:#0d0015;
+	font-size:20px;
+	font-weight:500;
+	line-height:20px;
+}
+.curdef {
+	cursor: default;
+}
+
+input[id="birthyear"], input[id="graduateyear"] {
+	width: 60px;
+}
+
+.inputDiv textarea {
+	width:550px;
+}
+.w130 {
+	width: 130px;
+}
+.w150 {
+	width: 150px;
+}
+
+.msgErr {
+	display:none;
+	color:crimson;
+	font-size:12px;
+}
+

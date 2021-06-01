@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* -------------------------------------------------- 
+	Copyright: (c)visual and echo japan
+	Created: 2013.08.20
+ -------------------------------------------------- */
+
+* { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+a, img, abbr, acronym, fieldset { border: 0; }
+
+em, strong, dfn, code, var, cite,
+input, select, textarea, button, optgroup, option,
+address,
+th, caption  { font-weight: inherit; font-style: inherit; font-size: inherit; }
+
+input, select, textarea, button, optgroup, option { font-family: inherit; }
+
+li { list-style: none; }
+
+th, td { vertical-align: top; }
+th, caption { text-align: left; }
+
+abbr, acronym { font-variant: normal; }
+
+ins, del { text-decoration: none; }
+
+sub, sup { vertical-align: baseline; }
+
+q:before, q:after { content: ''; }
+
+div, p,
+ul, ol, li, dl, dt, dd,
+th, td,
+h1, h2, h3, h4, h5, h6 { background-repeat: no-repeat; background-position: 0 0; }
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section { display:block; }

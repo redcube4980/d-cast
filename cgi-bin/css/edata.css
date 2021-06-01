@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+h3 {
+	font-family: "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+	margin: 24px 0px 8px 0px;
+	padding: 0;
+	color:#0d0015;
+	font-weight:700;
+	font-size:24px;
+	line-height:24px;
+}
+
+.text_pfs {
+	margin: 8px 0px;
+	color:#0d0015;
+	font-weight:500;
+	font-size:18px;
+	line-height:18px;
+}
+input[type="radio"] {
+	margin: 8px 0px;
+};
+#btnPublic {
+	margin:12px 0px;
+}

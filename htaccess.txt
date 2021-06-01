@@ -1,0 +1,10 @@
+AuthUserFile /virtual/here2/public_html/d-cast.here2.click/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Input ID and Password."
+AuthType Basic
+require valid-user
+<Files ~ "^.(htpasswd|htaccess)$">
+deny from all
+</Files>
+
+AddHandler server-parsed .shtml .html

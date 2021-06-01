@@ -1,0 +1,63 @@
+#topimg{
+	width:780px;
+	height:110px;
+	margin:0;
+	padding:0;
+
+}
+#contents_re{
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 0px;
+	height: auto;
+	width: 780px;
+	background-image: url(../reference/images/formback.gif);
+	background-repeat: repeat-y;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+#footer {
+	height: 31px;
+	width: 780px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+.em078{
+	font-size:0.78em;
+
+}
+.backimg1{
+	background-image:url(../recruit/images/l_saiyo.gif);
+	background-repeat:no-repeat;
+	width:170px;
+}
+#top2 {
+	height: 34px;
+	width: 780px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.em08{
+	font-size:0.8em;
+}
+
+.space10 {
+	padding-bottom: 10px;
+}
+.space20 {
+	padding-bottom: 20px;
+}
+h3 {
+	font-size: 0.9em;
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-top: 30px;
+	padding-left: 95px;
+}

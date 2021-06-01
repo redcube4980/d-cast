@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* -------------------------------------------------- 
+	Copyright: (c)visual and echo japan
+	Created: 2012-8-1
+ -------------------------------------------------- */
+ 
+ /* multi column */
+
+.lc { float: left; }
+.rc { float: right; }
+
+ /* clearfix */
+.clr{ display: inline-table; min-height: 1%; }
+/* Clear Fix(css hack) */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.imgAutoWidth {
+	width: 100%;
+	height: auto;
+}
+
+.fontMinchou{ font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif; }
+
+.maL60{ margin-left:60px; }
+.maL155{ margin-left:155px; }
+.maR155{ margin-right:155px; }
+
+
+/*----------------------------------------------------
+	#蒸気
+----------------------------------------------------*/
+/*全体蒸気*/
+#contentsArea #steam_01 {
+	position: absolute;
+	top: 217px;
+	left: 2px;
+}
+#contentsArea #steam_02 {
+	position: absolute;
+	top: 83px;
+	left: 40px;
+}
+#contentsArea #steam_03 {
+	position: absolute;
+	top: 2px;
+	left: 0;
+}
+/*列車蒸気*/
+#contentsArea #train_steam_01 {
+	position: absolute;
+	top: 50px;
+	left: 320px;
+}
+#contentsArea #train_steam_02 {
+	position: absolute;
+	top: 2px;
+	left: 400px;
+}
+
+
+/*----------------------------------------------------
+	#屋形船　影
+----------------------------------------------------*/
+#contentsArea #boat_shadow {
+	position: absolute;
+	top: 471px;
+	left: 177px;
+}

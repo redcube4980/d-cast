@@ -1,0 +1,3 @@
+<Files "mgetcsv.cgi">
+AddHandler cgi-script-debug .cgi
+</Files>

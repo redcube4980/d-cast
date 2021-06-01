@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: whitesmoke !important;
+}
+
+div {
+	text-align: left;
+}
+
+#wrap {
+	width: 90%;
+	height: 100%;
+	padding: 3% 5%;
+	margin: auto;
+	box-shadow: 3px 3px 10px 5px #444444;
+	box-sizing: border-box;
+	background-color: white;
+}
+
+#imgIndicator {
+	display: none;
+}
+#regIndicatorT {
+	display: none;
+}
+.errMessage {
+	color: crimson;
+	font-size: 1.8vw;
+	font-weight: 600;
+	display: none;
+}
+.regMessage {
+	color: deepskyblue;
+	font-size: 1.8vw;
+	font-weight: 600;
+	display: none;
+}
+
+/* login.php */
+#contLogin {
+	line-height: 1.8;
+}
+#frmLogin {
+}
+#tblLogin {
+}
+#tblLogin td {
+	height: 3em;
+	padding: 0px 10px;
+}
+#contLogin #msgLogin {
+	color: crimson;
+	font-size: 1.8vw;
+	font-weight: 600;
+	display: none;
+}
+ #contLogin #msgChange {
+	color: deepskyblue;
+	font-size: 1.8vw;
+	font-weight: 600;
+	display: none;
+}
+#contLogin #msgFalure {
+	color: crimson;
+	font-size: 1.8vw;
+	font-weight: 600;
+	display: none;
+}
+#contLogin #msgDiscard {
+	color: crimson;
+	font-size: 1.8vw;
+	font-weight: 600;
+	display: none;
+}
+
+/* user.php */
+#tblUserReg {
+}
+#tblUserReg td {
+	height: 3em;
+	padding: 0px 10px;
+}
+#contUser {
+	line-height: 1.8;
+}
+#frmUser {
+}
+#contUser .errMessage {
+	color: crimson;
+	font-size: 1.8vw;
+	font-weight: 600;
+	display: none;
+}
+#contUser .resMessage {
+	color: deepskyblue;
+	font-size: 1.8vw;
+	font-weight: 600;
+	display: none;
+}
+
+/* index.php */
+#contMenu {
+	line-height: 1.8;
+}
+
+/* changepassword.php */
+#contChange {
+	line-height: 1.8;
+}
+#frmChange {
+}
+#contChange .errMessage {
+	color: crimson;
+	font-size: 1.8vw;
+	font-weight: 600;
+	display: none;
+}
+#contChange .resMessage {
+	color: deepskyblue;
+	font-size: 1.8vw;
+	font-weight: 600;
+	display: none;
+}
+
+/* displayphp */
+#contDisp {
+	line-height: 1.8;
+}
+#frmDisplay {
+}
+#contDisp .errMessage {
+	color: crimson;
+	font-size: 1.8vw;
+	font-weight: 600;
+	display: none;
+}
+#contDisp .resMessage {
+	color: deepskyblue;
+	font-size: 1.8vw;
+	font-weight: 600;
+	display: none;
+}
+
+#tblDispReg {
+}
+#tblDispReg td {
+	height: 3em;
+	padding: 0px 10px;
+}
+
+.display_present {
+	display: none;
+}

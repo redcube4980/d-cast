@@ -1,0 +1,323 @@
+#topimg{
+	width:780px;
+	height:80px;
+	margin:0;
+	padding:0;
+	background-image: url(../kessan/images/graf_top.gif);
+	background-repeat: no-repeat;
+
+}
+#topimg2{
+	width:780px;
+	height:36px;
+	margin:0;
+	padding:0;
+	background-image: url(../recruit/images/rec_topbar2.gif);
+	background-repeat: no-repeat;
+
+}
+
+#rec_contents{
+	width:780px;
+	background-image:url(../privacy/images/back.gif);
+	padding-top: 0px;
+	padding-right: 12px;
+	padding-left: 8px;
+	background-repeat: repeat-y;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+#rec_left{
+	width:164px;
+	float:left;
+	background-repeat: no-repeat;
+	margin-top: 0;
+	margin-left: 0;
+	padding-top: 0;
+	padding-left: 0;
+}
+#rec_left ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#rec_left li {
+	margin:0 0 0 10px;
+	width:154px;
+	height:27px;
+	padding:0;
+}
+#rec_left #b_top a{
+	margin:0;
+	display:block;
+	height:27px;
+	padding:0 0 0 10px;
+	background-image:url(../images/b_top.gif);
+	background-repeat:no-repeat
+}
+#rec_left #b_top a:hover{
+	background-image:url(../images/b_top+.gif);
+}
+#rec_left #b_rtop a{
+	margin:0;
+	display:block;
+	height:27px;
+	padding:0 0 0 10px;
+	background-image:url(../recruit/images/b_top.gif);
+	background-repeat:no-repeat
+}
+#rec_left #b_rtop a:hover{
+	background-image:url(../recruit/images/b_top+.gif);
+}
+#rec_left #b_mes a{
+	margin:0;
+	display:block;
+	height:27px;
+	padding:0 0 0 10px;
+	background-image:url(../recruit/images/b_sidemes.gif);
+	background-repeat:no-repeat
+}
+#rec_left #b_boss a{
+	margin:0;
+	display:block;
+	height:27px;
+	padding:0 0 0 10px;
+	background-image:url(../recruit/images/b_sideboss.gif);
+	background-repeat:no-repeat
+}
+#rec_left #b_boss a:hover{
+	background-image:url(../recruit/images/b_sideboss+.gif);
+}
+#rec_left #b_person a{
+	margin:0;
+	display:block;
+	height:27px;
+	padding:0 0 0 10px;
+	background-image:url(../recruit/images/b_sideperson.gif);
+	background-repeat:no-repeat
+}
+#rec_left #b_person a:hover{
+	background-image:url(../recruit/images/b_sideperson+.gif);
+}
+#rec_left #b_apply a{
+	margin:0;
+	display:block;
+	height:27px;
+	padding:0 0 0 10px;
+	background-image:url(../recruit/images/b_sideapply.gif);
+	background-repeat:no-repeat
+}
+#rec_left #b_apply a:hover{
+	background-image:url(../recruit/images/b_sideapply+.gif);
+}
+#rec_left #b_new a{
+	margin:0;
+	display:block;
+	height:27px;
+	padding:0 0 0 10px;
+	background-image:url(../recruit/images/b_sidenew.gif);
+	background-repeat:no-repeat
+}
+#rec_left #b_new a:hover{
+	background-image:url(../recruit/images/b_sidenew+.gif);
+}
+#rec_left #b_new0 a{
+	margin:0;
+	display:block;
+	height:27px;
+	padding:0 0 0 10px;
+	background-image:url(../recruit/images/b_sidenew0.gif);
+	background-repeat:no-repeat
+}
+#rec_left #b_new0 a:hover{
+	background-image:url(../recruit/images/b_sidenew0+.gif);
+}
+#rec_left .b_new1 a{
+	margin:0;
+	display:block;
+	height:27px;
+	padding:0 0 0 10px;
+	background-image:url(../recruit/images/b_sidenew1.gif);
+	background-repeat:no-repeat
+}
+#rec_left .b_new1 a:hover{
+	background-image:url(../recruit/images/b_sidenew1+.gif);
+}
+#rec_left .b_new2 a{
+	margin:0;
+	display:block;
+	height:27px;
+	padding:0 0 0 10px;
+	background-image:url(../recruit/images/b_sidenew2.gif);
+	background-repeat:no-repeat
+}
+#rec_left .b_new2 a:hover{
+	background-image:url(../recruit/images/b_sidenew2+.gif);
+}
+#rec_left .b_new3 a{
+	margin:0;
+	display:block;
+	height:27px;
+	padding:0 0 0 10px;
+	background-image:url(../recruit/images/b_sidenew3.gif);
+	background-repeat:no-repeat
+}
+#rec_left .b_new3 a:hover{
+	background-image:url(../recruit/images/b_sidenew3+.gif);
+}
+#rec_left #b_exp a{
+	margin:0;
+	display:block;
+	height:27px;
+	padding:0 0 0 10px;
+	background-image:url(../recruit/images/b_sideexp.gif);
+	background-repeat:no-repeat
+}
+#rec_left #b_exp a:hover{
+	background-image:url(../recruit/images/b_sideexp+.gif);
+}
+
+#rec_right{
+	width:596px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+h2 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+.em078{
+	font-size:0.78em;
+
+}
+.space10 {
+	padding-bottom: 10px;
+}
+.space20 {
+	padding-bottom: 20px;
+}
+h3 {
+	border-bottom-width: 1px;
+	border-left-width: 8px;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-left-color: #7898E3;
+	border-bottom-color: #7898E3;
+	border-top-style: none;
+	border-top-color: #7898E3;
+	border-right-style: none;
+	border-right-color: #7898E3;
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 0.9em;
+	color: #666666;
+	height: 15px;
+	width: 540px;
+	line-height: 130%;
+}
+#rec_right p {
+	font-size: 0.78em;
+	color: #333333;
+	line-height: 140%;
+	padding-left: 10px;
+	margin-left: 0px;
+}
+#rec_rightbox {
+	padding-top: 0px;
+	padding-right: 25px;
+	padding-left: 10px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-bottom: 15px;
+}
+#rec_righttop {
+	margin: 0px;
+	padding: 0px;
+}
+.photo_fr {
+	margin: 4px;
+	padding: 3px;
+	float: right;
+	border: 1px solid #CCCCCC;
+}
+h2 {
+	font-size: 0.98em;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: thick;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: dashed;
+	border-top-color: #6FB5D9;
+	border-bottom-color: #6FB5D9;
+	border-left-color: #6FB5D9;
+	width: 556px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #6FB5D9;
+	color: #2E4F9C;
+	font-weight: bolder;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#rec_rightbox p {
+	color: #666666;
+	line-height: 150%;
+}
+h2 {
+	font-size: 0.95em;
+	color: #2E4F9C;
+	margin-left: 5px;
+	padding: 5px;
+	width: 550px;
+	height: 18px;
+}
+.orange {
+	color: #FF6600;
+}
+.cap {
+	font-size: 0.78em;
+}
+#rec_rightbox ul {
+	line-height: 150%;
+	color: #666666;
+	font-size: 0.78em;
+	margin-left: 0px;
+	padding-left: 30px;
+}
+#rec_rightbox ol {
+	font-size: 0.78em;
+	line-height: 150%;
+	margin-left: 0px;
+	padding-left: 35px;
+	color: #666666;
+}
+.em12 {
+	font-size: 1.2em;
+}
+.line160 {
+	line-height: 160%;
+}
+h1 {
+	margin: 0px;
+	padding: 0px;
+}
+h4 {
+	font-size: 0.9em;
+	color: #005151;
+}
+ol .number1 {
+	list-style-type: none;
+	background-image: url(../recruit/images/ol_img1.gif);
+	background-repeat: no-repeat;
+	margin-left: 0px;
+	padding-left: 0px;
+	line-height: 165%;
+}
