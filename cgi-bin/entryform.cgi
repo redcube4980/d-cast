@@ -817,11 +817,6 @@ print << "EOF";
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 <link type="text/css" rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/excite-bike/jquery-ui.css" />
-<!--
-<script type="text/javascript" src="jquery/jquery-1.8.3.js"></script>
-<script type="text/javascript" src="jquery/ui/jquery-ui.min.js"></script>
-<link type="text/css" rel="stylesheet" href="jquery/themes/excite-bike/jquery-ui.css" />
--->
 
 <!-- ZIPCloudAPI 郵便番号⇒住所 jQueryPlugin-->
 <script type="text/javascript" src="jquery/plugin/zipcloud/jquery.zipcloud.js"></script>
