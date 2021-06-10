@@ -209,6 +209,9 @@
 	margin:0;
 	padding:0;
 }
+.nospace_tb {
+    font-size: 0.78em;
+}
 h2 {
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -247,7 +250,6 @@ h3 {
 	line-height: 130%;
 }
 #rec_right p {
-	font-size: 0.78em;
 	color: #333333;
 	line-height: 140%;
 	padding-left: 10px;
@@ -296,6 +298,9 @@ h2 {
 	color: #666666;
 	line-height: 150%;
 }
+#rec_rightbox .top-text {
+    font-size: 0.78em;
+}
 h2 {
 	font-size: 0.95em;
 	color: #2E4F9C;
@@ -310,10 +315,21 @@ h2 {
 .cap {
 	font-size: 0.78em;
 }
+#wrapper #rec_contents #rec_right #rec_rightbox .nospace ul {
+  font-size: 100%;
+  padding: 0;
+}
+.nospace_tb li ul li {
+  font-size: 100%;
+  list-style: none;
+}
+#wrapper #rec_contents #rec_right #rec_rightbox .nospace p {
+	margin-top: 0;
+	padding: 0;
+}
 #rec_rightbox ul {
 	line-height: 150%;
 	color: #666666;
-	font-size: 0.78em;
 	margin-left: 0px;
 	padding-left: 30px;
 }

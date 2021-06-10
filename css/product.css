@@ -311,6 +311,20 @@ h2 {
 	padding-left: 35px;
 	color: #666666;
 }
+.flex {
+  display: flex;
+  flex-flow: column;
+}
+.flex td:last-child {
+  border-top: none;
+}
+.flex td:nth-child(1) {
+  border-bottom: none;
+}
+.products.blue {
+  color: #2E4F9C;
+  font-size: 1em;
+}
 .em12 {
 	font-size: 1.2em;
 }

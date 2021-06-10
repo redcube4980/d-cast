@@ -7,7 +7,7 @@ document.write('<li id="b_cent"><a href="/equipment/nagoya/nag_equip.html#1"></a
 document.write('<li id="b_machine"><a href="/equipment/nagoya/nag_equip.html#2"></a></li>');
 //document.write('<li id="b_ppw"><a href="/equipment/nagoya/nag_equip.html#2"></a></li>');
 document.write('<li id="b_radio"><a href="/equipment/nagoya/nag_equip.html#3"></a></li>');
-document.write('<li id="b_three"><a href="/equipment/nagoya/nag_equip.html#3"></a></li>');
+//document.write('<li id="b_three"><a href="/equipment/nagoya/nag_equip.html#3"></a></li>');
 document.write('<li id="b_nakatsu"><a href="/equipment/nakatsu/index.html"></a></li>');
 document.write('<li id="b_cad"><a href="/equipment/nakatsu/nak_equip.html#1"></a></li>');
 document.write('<li id="b_manufactur"><a href="/equipment/nakatsu/nak_equip.html#1"></a></li>');
